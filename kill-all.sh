@@ -1,0 +1,6 @@
+#!/bin/sh
+docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
+
+docker ps -a
+
+./clean-bundles.sh

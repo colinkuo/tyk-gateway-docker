@@ -1,7 +1,8 @@
 FROM debian:jessie-slim
 
 ENV GRPCVERSION 1.7.0
-ENV TYKVERSION 2.7.1
+# ENV TYKVERSION 2.7.1
+ENV TYKVERSION 2.5.4
 ENV TYKLANG ""
 
 ENV TYKLISTENPORT 8080
@@ -24,6 +25,7 @@ RUN apt-get update \
             libpython3.4 \
  && wget https://bootstrap.pypa.io/get-pip.py && python3 get-pip.py && rm get-pip.py \
  && pip3 install grpcio==$GRPCVERSION \
+ && pip3 install requests \
  && apt-get purge -y build-essential \
  && apt-get autoremove -y \
  && rm -rf /root/.cache
