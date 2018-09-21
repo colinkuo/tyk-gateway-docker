@@ -10,6 +10,7 @@ ENV TYKSECRET 352d20ee67be67f6340b4c0605b044b7
 
 LABEL Description="Tyk Gateway docker image" Vendor="Tyk" Version=$TYKVERSION
 
+# add addtional python module 'requests'
 RUN apt-get update \
  && apt-get upgrade -y \
  && apt-get install -y --no-install-recommends \
