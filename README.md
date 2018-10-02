@@ -1,4 +1,5 @@
-(Edited) 
+
+(Edited)  ![Docker Automated build](https://img.shields.io/docker/automated/colinkuo/tyk-gateway-docker.svg) ![Docker Build](https://img.shields.io/docker/build/colinkuo/tyk-gateway-docker.svg)
 * 'requests' python module will be installed in docker container
 * The version of Tyk is downgraded to v2.5.4 since there was an issue in v2.7.1  for the integration of python plugin (need to provide detailed information and file a ticket)
 
