@@ -1,3 +1,7 @@
+(Edited) 
+* 'requests' python module will be installed in docker container
+* The version of Tyk is downgraded to v2.5.4 since there was an issue in v2.7.1  for the integration of python plugin (need to provide detailed information and file a ticket)
+
 Official Tyk Gateway Docker Build
 =================================
 
